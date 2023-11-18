@@ -9,7 +9,9 @@
         <meta name="description" content="Servicio de logística y transporte confiable especializado en fletes terrestres locales, nacionales e internacionales en México, Estados Unidos y Canadá.">
         <meta name="author" content="MaKa Logistics">
         <!-- STYLES AND FONTS -->
-        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+        <link rel="stylesheet" href="styles/styles.css">
+        <link rel="stylesheet" href="styles/normalize.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,7 +19,173 @@
     </head>
 
     <body>
-        <h1>Inicio</h1>
+        <header class="header">
+            <nav class="header__navbar flex container">
+                <div class="header__logo"><a href="index.html"><img src="assets/maka-logistics-logo-png.webp" width="136px" alt=""></a></div>
+                <ul class="header__menu">
+                    <a href="#" class="header__link"><li>Inicio</li></a>
+                    <a href="sobre-nosotros.html" class="header__link"><li>Sobre Nosotros</li></a>
+                    <a href="contacto.html" class="header__link"><li>Contacto</li></a>
+                </ul>
+            </nav>
+        </header>
+        
+        <main>
+            <section class="home-hero section container">
+                <h1 class="home-hero__title">Tu logística sin fronteras</h1>
+                <p>Desbloquea el potencial del transporte eficiente en México, Estados Unidos y Canadá con nuestro equipo de expertos en logística.</p>
+            </section>
+            
+            <section class="text-with-img section container">
+                <div class="text-with-img__cta">
+                    <h2>Sobre nosotros</h2>
+                    <div class="separator"></div>
+                    <p>Brindamos un servicio de <strong>logística especializado en fletes</strong> a nivel local, nacional e internacional.</p>
+                    <p>Operamos en múltiples ubicaciones como Torreón, Monterrey, Altamira y Manzanillo, con un enfoque en soluciones terrestres confiables.</p>
+                    <a href="#"><button class="button">Saber más</button></a>
+                </div>
+                <div class="text-with-img__img">
+                    <img src="assets/about-cta-pic.webp" width="100%" alt="">
+                </div>
+            </section>
+
+            <section class="services section">
+                <div class="services__content container">
+                    <h2>Más que transporte, somos tu solución logística</h2>
+                    <p>Porque cada envío es una oportunidad para brindarte la mejor experiencia.</p>
+                    <div class="services__cards flex">
+                        <div class="services__card">
+                            <img src="assets/feature-1.webp" width="100%" class="services__card-img" alt="">
+                            <h3>Paquetería</h3>
+                            <p>Enviamos y entregamos tus bienes de forma rápida y segura.</p>
+                        </div>
+
+                        <div class="services__card">
+                            <img src="assets/feature-2.webp" width="100%" class="services__card-img" alt="">
+                            <h3>Transporte</h3>
+                            <p>Con cruce, importación y exportación de Estados Unidos y Canadá.</p>
+                        </div>
+
+                        <div class="services__card">
+                            <img src="assets/feature-3.webp" width="100%" class="services__card-img" alt="">
+                            <h3>Fletes Locales</h3>
+                            <p>Soluciones de transporte completo para distancias cortas.</p>
+                        </div>
+
+                        <div class="services__card">
+                            <img src="assets/feature-4.webp" width="100%" class="services__card-img" alt="">
+                            <h3>Fletes Nacionales</h3>
+                            <p>Trasladamos tus bienes por todo el país con total confianza.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="trucks-show section">
+                <div class="trucks-show__text container">
+                    <h1 class="trucks-show__title">Efectividad sobre ruedas</h1>
+                    <p>Conoce los equipos de nuestra flota, eficiencia y potencia en cada kilómetro.</p>
+                </div>
+
+                <div class="trucks-show__cards container container--sm">
+                    <div class="trucks-show__card">
+                        <img src="assets/truck-1.webp" width="100%" class="trucks-show__img" alt="">
+                        <h4>Nissan 1 Tonelada</h4>
+                    </div>
+                    
+                    <div class="trucks-show__card">
+                        <img src="assets/truck-2.webp" width="100%" class="trucks-show__img" alt="">
+                        <h4>Viajes de 1 Ton. y Torton</h4>
+                    </div>
+    
+                    <div class="trucks-show__card">
+                        <img src="assets/truck-3.webp" width="100%" class="trucks-show__img" alt="">
+                        <h4>Plataforma de 6 Mts</h4>
+                    </div>
+    
+                    <div class="trucks-show__card">
+                        <img src="assets/truck-4.webp" width="100%" class="trucks-show__img" alt="">
+                        <h4>Caja de 53 y Plataforma</h4>
+                    </div>
+                </div>
+            </section>
+
+            <section class="services section">
+                <div class="services__content container">
+                    <h2>¿Por qué somos los mejores?</h2>
+                    <div class="services__features flex">
+                        <div class="services__feature">
+                            <img src="assets/dif-1.webp" width="100%" class="services__feature-img" alt="">
+                            <p>Control satelital y seguimiento preciso para tus envíos.</p>
+                        </div>
+
+                        <div class="services__feature">
+                            <img src="assets/dif-2.webp" width="100%" class="services__feature-img" alt="">
+                            <p>Cargamos en puertos y aeropuertos mexicanos.</p>
+                        </div>
+
+                        <div class="services__feature">
+                            <img src="assets/dif-3.webp" width="100%" class="services__feature-img" alt="">
+                            <p>Tu carga está asegurada, nuestra responsabilidad.</p>
+                        </div>
+
+                        <div class="services__feature">
+                            <img src="assets/dif-4.webp" width="100%" class="services__feature-img" alt="">
+                            <p>Servicio de grúa de 15 y 20 ton. en Altamira y Manzanillo.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="text-with-img section container">
+                <div class="text-with-img__cta">
+                    <h2>Solicita tu cotización</h2>
+                    <div class="separator"></div>
+                    <p>Estamos listos para ayudarte a optimizar tu transporte. Conecta con nosotros y obtén una cotización personalizada hoy mismo.</p>
+                    <p><strong>¡Hagamos tu logística más eficiente!</strong></p>
+                    <a href="#"><button class="button">Contactar</button></a>
+                </div>
+                <div class="text-with-img__img">
+                    <!-- PENDIENTE ANCHO DEL MAPA -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7197.772796300651!2d-103.37734400000001!3d25.575446!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x868fdaee8c0f56ab%3A0x3f93b494b68dbdd1!2sE.%20L%C3%B3pez%20S%C3%A1nchez%2C%20Coahuila%20de%20Zaragoza%2C%20M%C3%A9xico!5e0!3m2!1ses-419!2sus!4v1700163497402!5m2!1ses-419!2sus" width="580" height="420" style="border:0; border-radius:5px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer__menu flex container">
+                <div class="footer__nav">
+                    <div class="footer__logo">
+                        <a href="index.html"><img src="assets/maka-logistics-white-logo.webp" width="100%" alt=""></a>
+                    </div>
+                    <p>Transformando desafíos de transporte en éxitos logísticos.</p>
+                </div>
+                <div class="footer__nav">
+                    <h4>Navegación</h4>
+                    <ul class="footer__links">
+                        <a href="index.html"><li>Inicio</li></a>
+                        <a href="sobre-nosotros.html"><li>Sobre Nosotros</li></a>
+                        <a href="contacto.html"><li>Contacto</li></a>
+                    </ul>
+                </div>
+                <div class="footer__nav">
+                    <h4>Síguenos</h4>
+                    <ul class="footer__links">
+                        <li><i class="bi bi-facebook"></i><p>makalogistics</p></li>
+                        <li><i class="bi bi-instagram"></i><p>makalogistics</p></li>
+                        <li><i class="bi bi-linkedin"></i><p>Maka Logistics</p></li>
+                    </ul>
+                </div>
+                <div class="footer__nav">
+                    <h4>Contacto</h4>
+                    <ul class="footer__links">
+                        <a href="mailto:operaciones@makalogistics.mx"><li><p>operaciones@makalogistics.mx</p></li></a>
+                        <a href="https://wa.me/+528132554804/"><li><i class="bi bi-whatsapp"></i><p>813 255 4804</p></li></a>
+                    </ul>
+                </div>
+            </div>
+            <p class="footer__lic">Copyright &copy; 2023 MaKa Logistics. <strong><a href="#">Developed by Alex Molina.</a></strong></p>
+        </footer>
     </body>
 
 </html>
