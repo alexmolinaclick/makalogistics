@@ -19,6 +19,10 @@ body, button {
         background-color: var(--background);
     }
 
+h1, h2, h3, h4 {
+    margin-top: 0;
+}
+
 h1, h2 {
     font-weight: 700;
     }
@@ -33,7 +37,7 @@ h3, h4 {
     font-weight: 600;
     }
     h3 {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
     h4 {
         font-size: 1.15rem;
@@ -60,17 +64,17 @@ i {
 }
 
 /*----------------------------
-------- INNER SPACING --------
+------ SPACE & POSITION ------
 ----------------------------*/
 
 .flex {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-content: center;
+    align-items: center;
     }
     .flex--top {
-        align-content: flex-start;
+        align-items: flex-start;
     }
 
 .section {
@@ -78,13 +82,13 @@ i {
 }
 
 .container {
-    width: 76%;
-    max-width: 1160px;
+    width: 80%;
+    max-width: 1200px;
     margin-right: auto;
     margin-left: auto;
     }
     .container--sm {
-        width: 65%;
+        width: 67%;
         max-width: 960px;
     }
 
@@ -105,6 +109,7 @@ i {
     top: 0;
     height: 90px;
     background-color: white;
+    z-index: 100;
     }
     .header__navbar {
         padding-top: 1rem;
@@ -128,8 +133,12 @@ i {
         .header__link:not(:last-child) {
             margin-right: 2rem;
         }
+    /* @media screen and (max-width: ) {
+        
+    } */
 
 .button {
+    margin-top: 1rem;
     padding: 0.5rem 1.5rem;
     border: none;
     border-radius: 4px;
@@ -191,3 +200,88 @@ i {
 /*----------------------------
 ------ SECTIONS STYLING ------
 ----------------------------*/
+
+.home-hero {
+    position: relative;
+    height: 510px;
+    background-image: url('/assets/hero-pic.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: white;
+    }
+    .home-hero__title {
+        z-index: 20;
+    }
+    .home-hero__overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(36, 75, 147, .7);
+    }
+
+/* .text-with-img {} */
+    .text-with-img__cta {
+        width: 42%;
+    }
+    .text-with-img__img {
+        width: 52%;
+    }
+        .text-with-img img {
+            border-radius: 5px;
+        }
+
+.services {
+    background-color: var(--main-color);
+    }
+    .services__content {
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
+    .services__title {
+        margin-top: 0;
+        margin-bottom: 3.5rem;
+        color: white;
+        text-align: center;
+    }
+    .services__card {
+        padding: 2rem 1.2rem 1rem;
+        width: 23.5%;
+        border-radius: 4px;
+        background-color: white;
+        text-align: center;
+    }
+    .services__card-img {
+        margin-bottom: 1.2rem;
+        width: 45%;
+    }
+    .services__feature {
+        width: 22%;
+        color: white;
+        text-align: center;
+    }
+    .services__feature-img {
+        border-radius: 5px;
+    }
+
+.trucks-show {
+    margin-bottom: 2.6rem;
+    text-align: center;
+    }
+    .trucks-show__text {
+        margin-bottom: 3.8rem;
+    }
+    .trucks-show__title {
+        color: var(--main-color);
+    }
+    .trucks-show__card {
+        padding: 2.8rem 2rem 1.2rem;
+        margin-bottom: 3.2rem;
+        border: solid 2px var(--text-color);
+        border-radius: 8px;
+        width: 48%;
+    }
+    .trucks-show__img {
+        margin-bottom: 1.3rem;
+    }

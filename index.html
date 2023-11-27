@@ -11,13 +11,13 @@
         <!-- STYLES AND FONTS -->
         <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
         <link rel="stylesheet" href="styles/styles.css">
-        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="libraries/normalize.css">
+        <link rel="stylesheet" href="libraries/aos.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
     </head>
-
     <body>
         <header class="header">
             <nav class="header__navbar flex container">
@@ -31,18 +31,21 @@
         </header>
         
         <main>
-            <section class="home-hero section container">
-                <h1 class="home-hero__title">Tu logística sin fronteras</h1>
-                <p>Desbloquea el potencial del transporte eficiente en México, Estados Unidos y Canadá con nuestro equipo de expertos en logística.</p>
+            <section class="home-hero flex section">
+                <div class="home-hero__title container container--sm">
+                    <h1 >Tu logística sin fronteras</h1>
+                    <p>Desbloquea el potencial del transporte eficiente en México, Estados Unidos y Canadá con nuestro equipo de expertos en logística.</p>
+                </div>
+                <div class="home-hero__overlay"></div>
             </section>
             
-            <section class="text-with-img section container">
-                <div class="text-with-img__cta">
+            <section class="text-with-img flex section container">
+                <div class="text-with-img__cta" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">
                     <h2>Sobre nosotros</h2>
                     <div class="separator"></div>
                     <p>Brindamos un servicio de <strong>logística especializado en fletes</strong> a nivel local, nacional e internacional.</p>
                     <p>Operamos en múltiples ubicaciones como Torreón, Monterrey, Altamira y Manzanillo, con un enfoque en soluciones terrestres confiables.</p>
-                    <a href="#"><button class="button">Saber más</button></a>
+                    <a href="contacto.html"><button class="button">Saber más</button></a>
                 </div>
                 <div class="text-with-img__img">
                     <img src="assets/about-cta-pic.webp" width="100%" alt="">
@@ -51,9 +54,11 @@
 
             <section class="services section">
                 <div class="services__content container">
-                    <h2>Más que transporte, somos tu solución logística</h2>
-                    <p>Porque cada envío es una oportunidad para brindarte la mejor experiencia.</p>
-                    <div class="services__cards flex">
+                    <div class="services__title">
+                        <h2>Más que transporte, somos tu solución logística</h2>
+                        <p>Porque cada envío es una oportunidad para brindarte la mejor experiencia.</p>
+                    </div>
+                    <div class="services__cards flex" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
                         <div class="services__card">
                             <img src="assets/feature-1.webp" width="100%" class="services__card-img" alt="">
                             <h3>Paquetería</h3>
@@ -81,42 +86,40 @@
                 </div>
             </section>
 
-            <section class="trucks-show section">
+            <section class="trucks-show">
                 <div class="trucks-show__text container">
                     <h1 class="trucks-show__title">Efectividad sobre ruedas</h1>
                     <p>Conoce los equipos de nuestra flota, eficiencia y potencia en cada kilómetro.</p>
                 </div>
-
-                <div class="trucks-show__cards container container--sm">
+                <div class="trucks-show__cards flex container container--sm" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">
                     <div class="trucks-show__card">
                         <img src="assets/truck-1.webp" width="100%" class="trucks-show__img" alt="">
                         <h4>Nissan 1 Tonelada</h4>
                     </div>
-                    
                     <div class="trucks-show__card">
                         <img src="assets/truck-2.webp" width="100%" class="trucks-show__img" alt="">
-                        <h4>Viajes de 1 Ton. y Torton</h4>
+                        <h4>1 Ton. y Torton</h4>
                     </div>
-    
                     <div class="trucks-show__card">
                         <img src="assets/truck-3.webp" width="100%" class="trucks-show__img" alt="">
                         <h4>Plataforma de 6 Mts</h4>
                     </div>
-    
                     <div class="trucks-show__card">
                         <img src="assets/truck-4.webp" width="100%" class="trucks-show__img" alt="">
-                        <h4>Caja de 53 y Plataforma</h4>
+                        <h4>Caja de 53 y otros</h4>
                     </div>
                 </div>
             </section>
 
             <section class="services section">
                 <div class="services__content container">
-                    <h2>¿Por qué somos los mejores?</h2>
+                    <div class="services__title">
+                        <h2>¿Por qué somos los mejores?</h2>
+                    </div>
                     <div class="services__features flex">
                         <div class="services__feature">
                             <img src="assets/dif-1.webp" width="100%" class="services__feature-img" alt="">
-                            <p>Control satelital y seguimiento preciso para tus envíos.</p>
+                            <p>Control satelital y seguimiento para tus envíos.</p>
                         </div>
 
                         <div class="services__feature">
@@ -137,17 +140,16 @@
                 </div>
             </section>
 
-            <section class="text-with-img section container">
+            <section class="text-with-img flex section container">
                 <div class="text-with-img__cta">
                     <h2>Solicita tu cotización</h2>
                     <div class="separator"></div>
                     <p>Estamos listos para ayudarte a optimizar tu transporte. Conecta con nosotros y obtén una cotización personalizada hoy mismo.</p>
                     <p><strong>¡Hagamos tu logística más eficiente!</strong></p>
-                    <a href="#"><button class="button">Contactar</button></a>
+                    <a href="contacto.html"><button class="button">Contactar</button></a>
                 </div>
-                <div class="text-with-img__img">
-                    <!-- PENDIENTE ANCHO DEL MAPA -->
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7197.772796300651!2d-103.37734400000001!3d25.575446!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x868fdaee8c0f56ab%3A0x3f93b494b68dbdd1!2sE.%20L%C3%B3pez%20S%C3%A1nchez%2C%20Coahuila%20de%20Zaragoza%2C%20M%C3%A9xico!5e0!3m2!1ses-419!2sus!4v1700163497402!5m2!1ses-419!2sus" width="580" height="420" style="border:0; border-radius:5px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="text-with-img__img" data-aos="fade-left" data-aos-duration="2000" data-aos-once="true">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7197.772796300651!2d-103.37734400000001!3d25.575446!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x868fdaee8c0f56ab%3A0x3f93b494b68dbdd1!2sE.%20L%C3%B3pez%20S%C3%A1nchez%2C%20Coahuila%20de%20Zaragoza%2C%20M%C3%A9xico!5e0!3m2!1ses-419!2sus!4v1700163497402!5m2!1ses-419!2sus" width="100%" height="420" style="border:0; border-radius:5px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </section>
         </main>
@@ -186,6 +188,10 @@
             </div>
             <p class="footer__lic">Copyright &copy; 2023 MaKa Logistics. <strong><a href="#">Developed by Alex Molina.</a></strong></p>
         </footer>
-    </body>
 
+        <script src="libraries/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+    </body>
 </html>
