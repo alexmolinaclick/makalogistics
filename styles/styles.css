@@ -60,7 +60,7 @@ ul, ol {
 
 i {
     margin-right: 1rem;
-    font-size: 1.2rem;
+    font-size: 1.25rem;
 }
 
 /*----------------------------
@@ -176,7 +176,7 @@ i {
     }
     .footer__nav {
         width: 22%;
-    }
+        }
         .footer__nav h4 {
             margin-top: 0;
         }
@@ -201,36 +201,70 @@ i {
 ------ SECTIONS STYLING ------
 ----------------------------*/
 
-.home-hero {
+.banner {
     position: relative;
-    height: 510px;
-    background-image: url('/assets/hero-pic.webp');
+    height: 390px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     text-align: center;
     color: white;
     }
-    .home-hero__title {
+        .banner--main {
+            height: 510px;
+            background-image: url('/assets/hero-pic.webp');
+        }
+        .banner--about {
+            background-image: url('/assets/about-hero-pic.webp');
+        }
+        .banner--cta {
+            height: 420px;
+            background-image: url('/assets/about-quote-cta.webp');
+        }
+        .banner--contact {
+            background-image: url('/assets/contact-hero-pic.webp');
+        }
+    .banner__title {
         z-index: 20;
     }
-    .home-hero__overlay {
+    .overlay {
         position: absolute;
         width: 100%;
         height: 100%;
         background-color: rgba(36, 75, 147, .7);
     }
+        .overlay--red {
+            background-color: rgba(255, 23, 2, .6);
+        }
 
 /* .text-with-img {} */
     .text-with-img__cta {
         width: 42%;
-    }
+        }
+        .text-with-img__cta h2 {
+            color: var(--main-color);
+        }
     .text-with-img__img {
         width: 52%;
-    }
+        }
         .text-with-img img {
             border-radius: 5px;
         }
+    .text-with-img__list {
+        padding-left: 0;
+        }
+        .text-with-img__list li {
+            margin-bottom: 1.1rem;
+        }
+        .text-with-img__list i {
+            color: var(--main-color);
+        }
+        .text-with-img__list p {
+            display: inline;
+        }
+    .text-with-img__alt-txt {
+        color: var(--secondary);
+    }
 
 .services {
     background-color: var(--main-color);
@@ -285,3 +319,48 @@ i {
     .trucks-show__img {
         margin-bottom: 1.3rem;
     }
+
+.contact-form {
+    background-color: white;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    border-bottom: solid 1px var(--secondary);
+    }
+    .contact-form__title {
+        margin-bottom: 2.85rem;
+        text-align: center;
+        }
+        .contact-form__title h1 {
+            color: var(--main-color);
+        }
+    .contact-form__fields {
+        padding: 0;
+        border: none;
+    }
+    .contact-form__input,
+    .contact-form__msg,
+    .contact-form__btn {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 300;
+    }
+    .contact-form__input,
+    .contact-form__msg {
+        padding: .5rem 1rem;
+        border: solid 1px var(--secondary);
+        border-radius: 4px;
+        background-color: var(--background);
+        font-size: 1rem;
+        }
+        .contact-form__input {
+            width: 49%;
+            margin-bottom: 1.2rem;
+        }
+        .contact-form__msg {
+            width: 100%;
+            height: 110px;
+            margin-bottom: .8rem;
+        }
+    .contact-form__btn {
+        width: 100%;
+    }
+    

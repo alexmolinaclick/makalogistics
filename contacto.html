@@ -11,19 +11,73 @@
         <!-- STYLES AND FONTS -->
         <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
         <link rel="stylesheet" href="styles/styles.css">
-        <link rel="stylesheet" href="libraries/normalize.css">
+        <link rel="stylesheet" href="styles/normalize.css">
         <link rel="stylesheet" href="libraries/aos.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
     </head>
-
     <body>
-        <h1>Contáctanos</h1>
+        <header class="header">
+            <nav class="header__navbar flex container">
+                <div class="header__logo"><a href="index.html"><img src="assets/maka-logistics-logo-png.webp" width="136px" alt=""></a></div>
+                <ul class="header__menu">
+                    <a href="index.html" class="header__link"><li>Inicio</li></a>
+                    <a href="sobre-nosotros.html" class="header__link"><li>Sobre Nosotros</li></a>
+                    <a href="contacto.html" class="header__link"><li>Contacto</li></a>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="banner banner--contact flex">
+                <div class="banner__title container container--sm" data-aos="fade" data-aos-duration="1600" data-aos-once="true">
+                    <h1>Contacto</h1>
+                </div>
+                <div class="overlay"></div>
+            </section>
+
+            <section class="contact-form section">
+                <div class="contact-form__content container container--sm">
+                    <div class="contact-form__title">
+                        <h1>Solicita tu cotización</h1>
+                        <p>Escribe tu requerimiento o dudas sobre nuestros servicios, recibirás atención y cotización personalizadas.</p>
+                    </div>
+                    <form action="" class="contact-form__form">
+                        <fieldset class="contact-form__fields flex">
+                            <input type="text" name="Nombre" placeholder="Tu nombre" class="contact-form__input">
+                            <input type="email" name="Correo" placeholder="Correo electrónico" class="contact-form__input">
+                            <input type="text" name="Empresa" placeholder="Tu compañía" class="contact-form__input">
+                            <input type="tel" name="Teléfono" placeholder="Teléfono de contacto" class="contact-form__input">
+                            <textarea name="Mensaje" placeholder="Describe tu requerimiento o duda" class="contact-form__msg"></textarea>
+                            <input type="button" value="Enviar" class="contact-form__btn button">
+                        </fieldset>
+                    </form>
+                </div>
+            </section>
+
+            <section class="text-with-img flex section container">
+                <div class="text-with-img__cta">
+                    <h2>Medios de contacto</h2>
+                    <div class="separator"></div>
+                    <ul class="text-with-img__list">
+                        <li><i class="bi bi-envelope-fill"></i><p>operaciones@makalogistics.mx</p></li>
+                        <li><i class="bi bi-whatsapp"></i><p>+52 813 255 4804</p></li>
+                        <li><i class="bi bi-facebook"></i><p>makalogistics</p></li>
+                        <li><i class="bi bi-instagram"></i><p>makalogistics</p></li>
+                        <li><i class="bi bi-linkedin"></i><p>MaKa Logistics</p></li>
+                    </ul>
+                    <p class="text-with-img__alt-txt">Dirección: E. López Sánchez #204, Palma Real, Torreón, Coahuila.</p>
+                </div>
+                <div class="text-with-img__img" data-aos="fade-left" data-aos-duration="2000" data-aos-once="true">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7197.772796300651!2d-103.37734400000001!3d25.575446!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x868fdaee8c0f56ab%3A0x3f93b494b68dbdd1!2sE.%20L%C3%B3pez%20S%C3%A1nchez%2C%20Coahuila%20de%20Zaragoza%2C%20M%C3%A9xico!5e0!3m2!1ses-419!2sus!4v1700163497402!5m2!1ses-419!2sus" width="100%" height="420" style="border:0; border-radius:5px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </section>
+        </main>
 
         <footer class="footer">
-            <div class="footer__menu flex container">
+            <div class="footer__menu flex flex--top container">
                 <div class="footer__nav">
                     <div class="footer__logo">
                         <a href="index.html"><img src="assets/maka-logistics-white-logo.webp" width="100%" alt=""></a>
@@ -62,5 +116,4 @@
             AOS.init();
         </script>
     </body>
-
 </html>
