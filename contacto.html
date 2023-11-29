@@ -44,14 +44,14 @@
                         <h1>Solicita tu cotización</h1>
                         <p>Escribe tu requerimiento o dudas sobre nuestros servicios, recibirás atención y cotización personalizadas.</p>
                     </div>
-                    <form action="" class="contact-form__form">
-                        <fieldset class="contact-form__fields flex">
+                    <form id="form" action="" class="contact-form__form">
+                        <fieldset id="form__content" class="contact-form__fields flex">
                             <input type="text" name="Nombre" placeholder="Tu nombre" class="contact-form__input">
                             <input type="email" name="Correo" placeholder="Correo electrónico" class="contact-form__input">
                             <input type="text" name="Empresa" placeholder="Tu compañía" class="contact-form__input">
                             <input type="tel" name="Teléfono" placeholder="Teléfono de contacto" class="contact-form__input">
                             <textarea name="Mensaje" placeholder="Describe tu requerimiento o duda" class="contact-form__msg"></textarea>
-                            <input type="button" value="Enviar" class="contact-form__btn button">
+                            <input type="submit" id="sent-btn" value="Enviar" class="contact-form__btn button">
                         </fieldset>
                     </form>
                 </div>
@@ -113,7 +113,18 @@
 
         <script src="libraries/aos.js"></script>
         <script>
+            // AOS is initialized
             AOS.init();
+
+            // Form interactive alert
+            const formsent = document.getElementById('form');
+
+            formsent.addEventListener('submit', function(event) {
+                // This prevents reload
+                event.preventDefault();
+                alert('Tu mensaje ha sido enviado. ¡Gracias por contactarnos! Nos estaremos comunicando contigo en unos momentos vía correo electrónico.');
+                document.getElementById('form').reset();
+            });
         </script>
     </body>
 </html>
