@@ -294,17 +294,17 @@ i {
     }
         .banner--main {
             height: 510px;
-            background-image: url('/assets/hero-pic.webp');
+            background-image: url('https://raw.githubusercontent.com/alexmolinaclick/makalogistics/main/assets/hero-pic.webp');
         }
         .banner--about {
-            background-image: url('/assets/about-hero-pic.webp');
+            background-image: url('https://raw.githubusercontent.com/alexmolinaclick/makalogistics/main/assets/about-hero-pic.webp');
         }
         .banner--cta {
             height: 420px;
-            background-image: url('/assets/about-quote-cta.webp');
+            background-image: url('https://raw.githubusercontent.com/alexmolinaclick/makalogistics/main/assets/about-quote-cta.webp');
         }
         .banner--contact {
-            background-image: url('/assets/contact-hero-pic.webp');
+            background-image: url('https://raw.githubusercontent.com/alexmolinaclick/makalogistics/main/assets/contact-hero-pic.webp');
         }
     .banner__title {
         z-index: 20;
