@@ -8,7 +8,6 @@
         <meta name="keywords" content="cotizar, precio, transporte, terrestre, carga, fletes, envíos, mudanzas, internacionales, monterrey, nuevo león, estados unidos">
         <meta name="description" content="Cotizar servicios de logística y fletes locales en México, nacionales e internacionales gratis en Monterrey, Altamira, Nuevo León, Estados Unidos y Canadá.">
         <meta name="author" content="MaKa Logistics">
-        <!-- STYLES AND FONTS -->
         <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
         <link rel="stylesheet" href="styles/styles.css">
         <link rel="stylesheet" href="styles/normalize.css">
@@ -46,12 +45,12 @@
                     </div>
                     <form id="form" action="" class="contact-form__form">
                         <fieldset id="form__content" class="contact-form__fields flex">
-                            <input type="text" name="Nombre" placeholder="Tu nombre" class="contact-form__input">
-                            <input type="email" name="Correo" placeholder="Correo electrónico" class="contact-form__input">
+                            <input type="text" name="Nombre" placeholder="Tu nombre" required class="contact-form__input">
+                            <input type="email" name="Correo" placeholder="Correo electrónico" required class="contact-form__input">
                             <input type="text" name="Empresa" placeholder="Tu compañía" class="contact-form__input">
                             <input type="tel" name="Teléfono" placeholder="Teléfono de contacto" class="contact-form__input">
                             <textarea name="Mensaje" placeholder="Describe tu requerimiento o duda" class="contact-form__msg"></textarea>
-                            <input type="submit" id="sent-btn" value="Enviar" class="contact-form__btn button">
+                            <input type="submit" id="sent-btn" value="Enviar" min="32" class="contact-form__btn button">
                         </fieldset>
                     </form>
                 </div>
@@ -60,7 +59,7 @@
             <section class="text-with-img flex section container">
                 <div class="text-with-img__cta">
                     <h2>Medios de contacto</h2>
-                    <div class="separator"></div>
+                    <div class="separator separator--resp"></div>
                     <ul class="text-with-img__list">
                         <li><i class="bi bi-envelope-fill"></i><p>operaciones@makalogistics.mx</p></li>
                         <li><i class="bi bi-whatsapp"></i><p>+52 813 255 4804</p></li>
@@ -70,7 +69,7 @@
                     </ul>
                     <p class="text-with-img__alt-txt">Dirección: E. López Sánchez #204, Palma Real, Torreón, Coahuila.</p>
                 </div>
-                <div class="text-with-img__img" data-aos="fade-left" data-aos-duration="2000" data-aos-once="true">
+                <div class="text-with-img__img" data-aos="fade" data-aos-duration="2000" data-aos-once="true">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7197.772796300651!2d-103.37734400000001!3d25.575446!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x868fdaee8c0f56ab%3A0x3f93b494b68dbdd1!2sE.%20L%C3%B3pez%20S%C3%A1nchez%2C%20Coahuila%20de%20Zaragoza%2C%20M%C3%A9xico!5e0!3m2!1ses-419!2sus!4v1700163497402!5m2!1ses-419!2sus" width="100%" height="420" style="border:0; border-radius:5px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </section>
@@ -84,7 +83,7 @@
                     </div>
                     <p>Transformando desafíos de transporte en éxitos logísticos.</p>
                 </div>
-                <div class="footer__nav">
+                <div class="footer__nav hide-on-sm">
                     <h4>Navegación</h4>
                     <ul class="footer__links">
                         <a href="index.html"><li>Inicio</li></a>

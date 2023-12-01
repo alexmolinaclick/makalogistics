@@ -25,6 +25,7 @@ h1, h2, h3, h4 {
 
 h1, h2 {
     font-weight: 700;
+    line-height: 1.5;
     }
     h1 {
         font-size: 2.5rem;
@@ -63,9 +64,7 @@ i {
     font-size: 1.25rem;
 }
 
-/*----------------------------
------- SPACE & POSITION ------
-----------------------------*/
+/*---- SPACING & POSITIONING ----*/
 
 .flex {
     display: flex;
@@ -82,14 +81,27 @@ i {
 }
 
 .container {
-    width: 80%;
-    max-width: 1200px;
+    width: 85%;
+    max-width: 1280px;
     margin-right: auto;
     margin-left: auto;
     }
     .container--sm {
-        width: 67%;
+        width: 70%;
         max-width: 960px;
+    }
+    @media screen and (max-width: 920px) {
+        .container {
+            width: 90%;
+        }
+        .container--sm {
+            width: 80%;
+        }
+    }
+    @media screen and (min-width: 1025px) and (max-width: 1280px) {
+        .container--sm {
+            width: 76%;
+        }
     }
 
 .separator {
@@ -98,11 +110,20 @@ i {
     margin-top: 2.1rem;
     margin-bottom: 2.1rem;
     background-color: var(--main-color);
+    }
+    .separator--resp {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+@media screen and (max-width: 600px) {
+    .hide-on-sm {
+        display: none;
+        visibility: hidden;
+    }
 }
 
-/*----------------------------
------- GLOBAL COMPONENTS -----
-----------------------------*/
+/*---- GLOBAL COMPONENTS STYLES ----*/
 
 .header {
     position: sticky;
@@ -122,7 +143,7 @@ i {
     .header__menu {
         display: flex;
         justify-content: end;
-        width: 60%;
+        width: 70%;
     }
     .header__link {
         color: var(--accent);
@@ -134,9 +155,27 @@ i {
         .header__link:not(:last-child) {
             margin-right: 2rem;
         }
-    /* @media screen and (max-width: ) {
-        
-    } */
+    @media screen and (max-width: 580px) {
+        .header {
+            height: 134px;
+            }
+            .header__navbar {
+                padding-top: 1.1rem;
+            }
+            .header__logo {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                }
+            .header__menu {
+                justify-content: center;
+                width: 100%;
+                padding-left: 0;
+            }
+            .header__link:not(:last-child) {
+                margin-right: 1.2rem;
+            }
+    }
 
 .button {
     margin-top: 1rem;
@@ -197,10 +236,52 @@ i {
     .footer__lic {
         text-align: center;
     }
+    @media screen and (max-width: 600px) {
+        .footer {
+            padding-bottom: 1.5rem;
+            text-align: center;
+        }
+            .footer__logo {
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .footer__menu {
+                margin-bottom: .9rem;
+            }
+            .footer__nav {
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 2.2rem;
+            }
+            .footer__lic {
+                width: 90%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+    }
+    @media screen and (min-width: 601px) and (max-width: 920px) {
+        .footer__menu {
+            margin-bottom: 1rem;
+        }
+        .footer__nav {
+            width: 45%;
+            margin-bottom: 2rem;
+        }
+        .footer__slogan {
+            padding-right: 1.5rem;
+        }
+    }
+    @media screen and (min-width: 1025px) and (max-width: 1280px) {
+        .footer__nav {
+            width: 24.5%;
+        }
+        .footer__slogan {
+            padding-right: 1.5rem;
+        }
+    }
 
-/*----------------------------
------- SECTIONS STYLING ------
-----------------------------*/
+/*---- CONTENT SECTIONS STYLES ----*/
 
 .banner {
     position: relative;
@@ -238,33 +319,60 @@ i {
             background-color: rgba(255, 23, 2, .6);
         }
 
-/* .text-with-img {} */
-    .text-with-img__cta {
-        width: 42%;
+.text-with-img__cta {
+    width: 42%;
+    }
+    .text-with-img__cta h2 {
+        color: var(--main-color);
+    }
+.text-with-img__img {
+    width: 52%;
+    }
+    .text-with-img img {
+        border-radius: 5px;
+    }
+.text-with-img__list {
+    padding-left: 0;
+    }
+    .text-with-img__list li {
+        margin-bottom: 1.1rem;
+    }
+    .text-with-img__list i {
+        color: var(--main-color);
+    }
+    .text-with-img__list p {
+        display: inline;
+    }
+.text-with-img__alt-txt {
+    color: var(--secondary);
+}
+    @media screen and (max-width: 920px) {
+        .text-with-img--reverse {
+            flex-direction: column-reverse;
         }
-        .text-with-img__cta h2 {
-            color: var(--main-color);
+        .text-with-img .button {
+            margin-left: auto;
+            margin-right: auto;
         }
-    .text-with-img__img {
-        width: 52%;
+        .text-with-img__cta {
+            width: 100%;
+            margin-bottom: 3.2rem;
+            text-align: center;
         }
-        .text-with-img img {
-            border-radius: 5px;
+        .text-with-img__list {
+            margin-bottom: 2rem;
         }
-    .text-with-img__list {
-        padding-left: 0;
+        .text-with-img__img {
+            width: 100%;
         }
-        .text-with-img__list li {
-            margin-bottom: 1.1rem;
+    }
+    @media screen and (min-width: 1025px) and (max-width: 1280px) {
+        .text-with-img__cta {
+            width: 46%;
         }
-        .text-with-img__list i {
-            color: var(--main-color);
+        .text-with-img__img {
+            width: 48%;
         }
-        .text-with-img__list p {
-            display: inline;
-        }
-    .text-with-img__alt-txt {
-        color: var(--secondary);
     }
 
 .services {
@@ -299,6 +407,70 @@ i {
     .services__feature-img {
         border-radius: 5px;
     }
+    @media screen and (max-width: 600px) {
+        .services__content--m {
+            padding-bottom: 1.8rem;
+        }
+        .services__card {
+            padding: 1.8rem 1.5rem 1.4rem;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 2.5rem;
+            width: 90%;
+        }
+        .services__feature {
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    @media screen and (max-width: 935px) {
+        .services__card-img {
+            width: 40%;
+        }
+        .services__feature {
+            margin-bottom: 2.2rem;
+        }
+    }
+    @media screen and (min-width: 601px) and (max-width: 920px) {
+        .services__content--m {
+            padding-bottom: 2.8rem;
+        }
+        .services__card {
+            height: 300px;
+            padding: 1.5rem;
+            margin-bottom: 2.5rem;
+            width: 47%;
+        }
+        .services__feature {
+            width: 45%;
+        }
+    }
+    @media screen and (min-width: 921px) and (max-width: 935px) {
+        .services__feature {
+            width: 23%;
+        }
+    }
+    @media screen and (min-width: 1024px) and (max-width: 1280px) {
+        .services__card {
+            padding: 1.5rem 1rem 1.1rem;
+            height: 315px;
+            width: 23%;
+        }
+    }
+    @media screen and (min-width: 1024px) and (max-width: 1108px) {
+        .services__feature p {
+            padding-left: .5rem;
+            padding-right: .5rem;
+        }
+    }
+    @media screen and (min-width: 1109px) and (max-width: 1225px) {
+        .services__short-feat {
+            width: 85%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
 
 .trucks-show {
     margin-bottom: 2.6rem;
@@ -320,6 +492,23 @@ i {
     .trucks-show__img {
         margin-bottom: 1.3rem;
     }
+    @media screen and (max-width: 600px) {
+        .trucks-show {
+            margin-bottom: 2.9rem;
+            }
+            .trucks-show__card {
+                padding: 2.5rem 1.8rem 1rem;
+                margin-bottom: 2.9rem;
+                width: 100%;
+            }
+            .trucks-show__img {
+                margin-bottom: 1.3rem;
+            }
+    }
+    @media screen and (min-width: 1109px) and (max-width: 1225px) {
+        
+    }
+
 
 .contact-form {
     background-color: white;
@@ -363,5 +552,10 @@ i {
         }
     .contact-form__btn {
         width: 100%;
+    }
+    @media screen and (max-width: 810px) {
+        .contact-form__input {
+            width: 100%;
+        }
     }
     
