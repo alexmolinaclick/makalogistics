@@ -111,9 +111,11 @@ i {
     margin-bottom: 2.1rem;
     background-color: var(--main-color);
     }
-    .separator--resp {
-        margin-left: auto;
-        margin-right: auto;
+    @media screen and (max-width: 920px) {
+        .separator--resp {
+            margin-left: auto;
+            margin-right: auto;
+        }   
     }
 
 @media screen and (max-width: 600px) {
